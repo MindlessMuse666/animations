@@ -54,48 +54,58 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/paw2"
+            android:id="@+id/paw4"
             android:layout_width="47dp"
             android:layout_height="48dp"
-            android:rotation="-20"
-            app:srcCompat="@drawable/paws"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="94dp" />
+            android:alpha="0"
+            android:rotation="-10"
+            android:src="@drawable/paws"
+            app:layout_constraintBottom_toTopOf="@+id/paw3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.192"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.364" />
 
         <ImageView
             android:id="@+id/paw3"
             android:layout_width="47dp"
             android:layout_height="48dp"
-            android:rotation="20"
-            app:srcCompat="@drawable/paws"
-            tools:layout_editor_absoluteX="68dp"
-            tools:layout_editor_absoluteY="230dp" />
+            android:layout_marginBottom="116dp"
+            android:alpha="0"
+            android:rotation="10"
+            android:src="@drawable/paws"
+            app:layout_constraintBottom_toTopOf="@+id/paw2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.759"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
             android:id="@+id/paw1"
             android:layout_width="47dp"
             android:layout_height="48dp"
-            android:rotation="20"
+            android:alpha="0"
+            android:rotation="10"
+            android:src="@drawable/paws"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.759"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.876"
-            app:srcCompat="@drawable/paws" />
+            app:layout_constraintVertical_bias="0.876" />
 
         <ImageView
-            android:id="@+id/paw4"
+            android:id="@+id/paw2"
             android:layout_width="47dp"
             android:layout_height="48dp"
-            android:rotation="-20"
+            android:layout_marginBottom="96dp"
+            android:alpha="0"
+            android:rotation="-10"
+            android:src="@drawable/paws"
             app:layout_constraintBottom_toTopOf="@+id/paw1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.253"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/paw3"
-            app:layout_constraintVertical_bias="0.588"
-            app:srcCompat="@drawable/paws" />
+            app:layout_constraintHorizontal_bias="0.192"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -104,20 +114,81 @@
         android:layout_width="130dp"
         android:layout_height="625dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonsLayout"
-        app:layout_constraintEnd_toStartOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/carLayout"
         app:layout_constraintStart_toEndOf="@+id/pawsLayout"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:src="@drawable/flower"
+            android:id="@+id/flower1"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.216"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.885"
+            />
+
+        <ImageView
+            android:src="@drawable/flower"
+            android:id="@+id/flower2"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="92dp"
+            app:layout_constraintBottom_toTopOf="@+id/flower1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.783"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <ImageView
+            android:src="@drawable/flower"
+            android:id="@+id/flower3"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="116dp"
+            app:layout_constraintBottom_toTopOf="@+id/flower2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.216"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <ImageView
+            android:src="@drawable/flower"
+            android:id="@+id/flower4"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            app:layout_constraintBottom_toTopOf="@+id/flower3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.783"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.304"
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
+        android:id="@+id/carLayout"
         android:layout_width="130dp"
         android:layout_height="625dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonsLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/car"
+            android:layout_width="89dp"
+            android:layout_height="123dp"
+            android:alpha="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.968"
+            app:srcCompat="@drawable/car" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
